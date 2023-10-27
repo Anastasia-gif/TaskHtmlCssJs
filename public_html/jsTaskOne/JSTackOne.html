@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Change the color in the block</title>
+  <link rel="stylesheet" href="jsTackOne.js" />
+  <style>
+      .wrapper-content{
+          display: flex;
+          flex-direction: column;
+          gap: 200px;
+          border:1px solid blue;
+          width: 300px;
+          height: 300px;
+          border-radius: 20px;
+          align-items: center;
+      }
+      #changeColor{
+          width:100px;
+          height:30px;
+          border-radius:20px ;
+          box-shadow: 2px 8px 6px grey;
+      }
+  </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-content" id="block">
+            <div id="nameColor" style="color: white; font-weight: bold">#000000</div>
+             <input type="button" value="chaneColor" id="changeColor"/>
+        </div>
+    </div>
+    <script src="jsTackOne.js"></script>
+</body>
+</html>

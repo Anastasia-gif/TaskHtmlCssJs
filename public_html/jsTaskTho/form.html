@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Форма</title>
+  <link rel="stylesheet" href="formStyle.css" />
+</head>
+<body>
+    <div class="wrapper-content">
+        <form method="get">
+            <h1>Заполните форму</h1>
+            <label for="lab-name" >Введите ваше имя:</label>
+            <input name="name" placeholder="Валерий" id="lab-name" type="text" minlength="2" maxlength="30" pattern="/^[A-ZА-ЯЁ]+$/i" required />
+            <label for= "for-midleName">Введите вашу фамилию:</label>
+            <input id="for-midleName" minlength="2" maxlength="30" pattern="/^[A-ZА-ЯЁ]+$/i" required/>
+             <button id="submitBut" type="submit">Отправить</button>
+        </form>
+        <script src="formJs.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Начатие на кнопку</title>
+</head>
+<body>
+  <input type="text" name="text" id="inputT"/>
+  <input type="button" value="Нажми меня" id="inputB"/>
+  <script>
+      let inputText = document.getElementById("inputT");
+      let inputButton = document.getElementById("inputB");
+      let words = ["Один","Два","Три","Четыре","Пять"];
+      if(!window.gcounter){
+          window.gcounter=0;
+      }
+      inputButton.onclick = function(){
+          inputText.value= words[window.gcounter++];
+          if(window.gcounter===words.length)window.gcounter=0;
+      };
+  </script>
+</body>
+</html>

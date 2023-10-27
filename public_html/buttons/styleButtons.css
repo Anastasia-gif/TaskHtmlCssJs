@@ -1,0 +1,29 @@
+.container{
+    border: 1px dotted blue;
+    margin-top: 60px;
+    padding: 15px 10px;
+    width: 400px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+#changeBut_1,
+#changeBut_2{
+    width: 120px;
+    height: 50px;
+    align-self: center;
+}
+#changeBut_1:hover{
+    background: blueviolet;
+    color: white;
+    font-weight: 600;
+    border-radius: 50px 10px;
+    box-shadow: 10px 8px 12px black;
+}
+#changeBut_2:hover{
+   background: linear-gradient(179deg, chartreuse, transparent);
+    color: black;
+    font-weight: 600;
+    border-radius: 50px 10px;
+    box-shadow: 10px 8px 12px black;
+}
